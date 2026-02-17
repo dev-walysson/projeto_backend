@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"api/src/router"
+	"fmt"
+	"log"
+	"net/http"
+)
 
 func main() {
-	fmt.Println("main")
+	r := router.Gerar()
+
+	fmt.Println("Rodando API")
+	log.Fatal(http.ListenAndServe(":3000", r))
 }
