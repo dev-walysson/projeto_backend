@@ -10,7 +10,7 @@ var rotasUsuarios = []Rota{
 	{
 		URI:                "/usuarios",     //caminho da rota
 		Metodo:             http.MethodPost, //tipo de requisição
-		funcao:             controllers.CriarUsuario,
+		funcao:             controllers.InserirUsuario,
 		RequerAutenticacao: false,
 	},
 	//Vai buscar todos os usuários
